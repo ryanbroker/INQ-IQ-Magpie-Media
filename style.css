@@ -748,3 +748,298 @@ body.no-scroll {
     transition: none;
   }
 }
+/* Navigation shared across all pages */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.site-brand img {
+  display: block;
+  width: 50px;
+  max-width: 50px;
+  height: auto;
+  flex: 0 0 50px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.site-nav a {
+  padding: 6px 0;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+/* Page introduction */
+
+.inner-hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0 54px;
+  text-align: center;
+}
+
+.page-eyebrow {
+  margin: 0 0 14px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.inner-hero h1 {
+  margin: 0 0 22px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(34px, 5.5vw, 62px);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.inner-intro {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Section headings and foreground birds */
+
+.service-section,
+.process-section,
+.engagement-section {
+  padding: 36px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-heading-with-bird {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.section-bird {
+  display: block;
+  width: 50px;
+  max-width: 50px;
+  height: auto;
+  flex: 0 0 50px;
+}
+
+.service-section h2,
+.process-section h2,
+.engagement-section h2,
+.page-cta h2 {
+  margin: 0 0 16px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(25px, 3.5vw, 34px);
+  line-height: 1.25;
+}
+
+.section-heading-with-bird h2 {
+  margin: 0;
+}
+
+/* What can you bring us? */
+
+.assignment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.assignment-card {
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.assignment-card h3,
+.process-grid h3,
+.engagement-grid h3 {
+  margin: 0 0 14px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.assignment-card p,
+.assignment-card li,
+.process-grid p,
+.engagement-grid p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.assignment-card ul {
+  padding-left: 20px;
+  margin: 18px 0;
+}
+
+.assignment-card li {
+  margin-bottom: 7px;
+}
+
+.assignment-card .page-eyebrow {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.assignment-card .service-brand-label {
+  margin: 24px 0 0;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+}
+
+/* How we work */
+
+.section-intro {
+  margin: 0 0 28px;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-grid li {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 3px solid var(--blue);
+}
+
+.process-number {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--blue);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.process-grid p,
+.engagement-grid p {
+  margin: 0;
+}
+
+/* Project and ongoing support options */
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+}
+
+.engagement-grid article {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Closing invitation */
+
+.page-cta {
+  padding: 40px 20px;
+  margin: 20px 0 40px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+}
+
+.page-cta .section-bird {
+  margin: 0 auto 18px;
+}
+
+.page-cta p {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/* Keyboard focus */
+
+.site-header a:focus-visible,
+.page-cta a:focus-visible,
+.inner-hero a:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+/* Tablet and mobile layouts */
+
+@media (max-width: 780px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .site-nav {
+    gap: 20px;
+  }
+
+  .inner-hero {
+    padding: 25px 0 36px;
+  }
+
+  .assignment-grid,
+  .process-grid,
+  .engagement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .assignment-card,
+  .process-grid li {
+    padding: 20px;
+  }
+
+  .contact-with-magpies {
+    grid-template-columns: 35px minmax(0, 1fr) 35px;
+    gap: 8px;
+  }
+
+  .contact-with-magpies .contact-info {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-with-magpies .contact-magpie {
+    width: 35px;
+  }
+}
