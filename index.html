@@ -300,6 +300,52 @@
   </div>
 
   <script>
+<script>
+  function scrollPortfolio(direction) {
+    const track = document.getElementById("portfolio-track");
+    const card = track.querySelector(".portfolio-item");
+
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    track.scrollBy({
+      left: direction * (card.offsetWidth + 20),
+      behavior: reduceMotion ? "auto" : "smooth"
+    });
+  }
+
+  function openLightbox(src, alt) {
+    const lightbox = document.getElementById("lightbox");
+    const image = document.getElementById("lightbox-image");
+
+    image.src = src;
+    image.alt = alt;
+
+    lightbox.classList.add("active");
+    document.body.classList.add("no-scroll");
+  }
+
+  function closeLightbox(event) {
+    if (
+      event.target.id === "lightbox" ||
+      event.target.classList.contains("lightbox-close")
+    ) {
+      document.getElementById("lightbox").classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    }
+  }
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      document.getElementById("lightbox").classList.remove("active");
+      document.body.classList.remove("no-scroll");
+    }
+  });
+</script>
+
+</body>
+</html>
     function openLightbox(src, alt) {
       const lightbox = document.getElementById("lightbox");
       const image = document.getElementById("lightbox-image");
