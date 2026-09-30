@@ -184,6 +184,8 @@ body {
 
 /* Decorative framing artwork */
 
+/* Decorative magpie frame */
+
 body{
   position:relative;
   overflow-x:hidden;
@@ -201,25 +203,36 @@ body{
   z-index:1;
 }
 
-/* Broad corner-frame artwork */
 .frame-art-corners{
-  width:120vw;
+  width:100vw;
+  height:auto;
   max-width:none;
-  top:-40px;
+
+  top:80px;
   left:50%;
+
   transform:translateX(-50%);
-  opacity:0.10;
-}
 
-/* Single large magpie, pushed mostly off-canvas */
-.frame-art-main{
-  width:600px;
-  right:-260px;
-  top:820px;
-  opacity:0.12;
-  transform:rotate(6deg);
-}
+  opacity:0.13;
 
+  -webkit-mask-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 6%,
+      black 90%,
+      transparent 100%
+    );
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 6%,
+      black 90%,
+      transparent 100%
+    );
+}
 .flyer-image {
   cursor: zoom-in;
 }
