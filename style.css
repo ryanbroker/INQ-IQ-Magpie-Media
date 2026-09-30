@@ -96,6 +96,10 @@ body{
   color:var(--blue);
 }
 
+.magpie-explainer img{
+  height:130px;
+}
+
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
