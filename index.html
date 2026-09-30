@@ -393,7 +393,9 @@
     const selectedIndex = portfolioImages.findIndex(function(item) {
       return item.src === absoluteSrc;
     });
-
+    
+lightbox.classList.toggle("flyer-view", selectedIndex < 0);
+    
     if (selectedIndex >= 0) {
       lightboxItems = portfolioImages;
       lightboxIndex = selectedIndex;
