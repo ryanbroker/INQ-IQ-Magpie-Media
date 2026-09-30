@@ -687,3 +687,35 @@ body.no-scroll {
 #lightbox .lightbox-arrow {
   position: fixed;
 }
+/* Contact button beneath the opening paragraph */
+
+.hero .hero-contact {
+  margin-top: 24px;
+}
+
+/* Introduction above the contact information */
+
+.about-ryan {
+  max-width: 800px;
+  margin: 48px auto 36px;
+  padding: 28px 0 0;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+
+.about-ryan h2 {
+  margin: 0 0 16px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(26px, 4vw, 34px);
+  line-height: 1.2;
+}
+
+.about-ryan p {
+  margin: 0 0 16px;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.about-ryan p:last-child {
+  margin-bottom: 0;
+}
