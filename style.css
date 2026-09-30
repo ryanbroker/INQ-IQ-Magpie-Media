@@ -157,3 +157,12 @@ body{
     height:80px;
   }
 }
+html,
+body,
+.wrap,
+.hero,
+.brand-explainer,
+.grid,
+.contact {
+  background: #ffffff;
+}
