@@ -39,29 +39,48 @@
       stronger stories, and creative work that gets noticed.
     </p>
   </article>
+<section class="grid">
+  <article class="card">
+    <img
+      src="flyer-1.png"
+      alt="INQ IQ and Magpie Media overview"
+      class="flyer-image"
+      onclick="openLightbox(this.src, this.alt)"
+    >
 
+    <h2>INQ IQ</h2>
+
+    <p>
+      Inquiry Intelligence Consulting helps organizations solve important work through
+      strategy, research, writing, facilitation, process design, and special-project support.
+    </p>
+
+    <a class="button" href="mailto:ryan.broker@gmail.com?subject=INQ%20IQ%20Inquiry">
+      Start a conversation
+    </a>
+  </article>
+
+  <article class="card">
+    <img
+      src="flyer-2.png"
+      alt="Magpie Media and INQ IQ services"
+      class="flyer-image"
+      onclick="openLightbox(this.src, this.alt)"
+    >
+
+    <h2>Magpie Media</h2>
+
+    <p>
+      Creative strategy and execution for branding, websites, messaging, campaigns,
+      content, presentations, e-commerce, and SEO.
+    </p>
+
+    <a class="button" href="mailto:ryan.broker@gmail.com?subject=Magpie%20Media%20Inquiry">
+      Start a conversation
+    </a>
+  </article>
 </section>
-    <section class="grid">
-      <article class="card">
-        <img src="flyer-1.png" alt="INQ IQ and Magpie Media overview">
-        <h2>INQ IQ</h2>
-        <p>
-          Inquiry Intelligence Consulting helps organizations solve important work through
-          strategy, research, writing, facilitation, process design, and special-project support.
-        </p>
-        <a class="button" href="mailto:ryan.broker@gmail.com?subject=INQ%20IQ%20Inquiry">Start a conversation</a>
-      </article>
 
-      <article class="card">
-        <img src="flyer-2.png" alt="Magpie Media and INQ IQ services">
-        <h2>Magpie Media</h2>
-        <p>
-          Creative strategy and execution for branding, websites, messaging, campaigns,
-          content, presentations, e-commerce, and SEO.
-        </p>
-        <a class="button" href="mailto:ryan.broker@gmail.com?subject=Magpie%20Media%20Inquiry">Start a conversation</a>
-      </article>
-    </section>
 
     <section class="contact">
       <strong>Ryan Broker</strong><br>
@@ -70,5 +89,48 @@
       Cornhusker State
     </section>
   </main>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+    <button
+      class="lightbox-close"
+      onclick="closeLightbox(event)"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <img id="lightbox-image" src="" alt="">
+  </div>
+
+  <script>
+    function openLightbox(src, alt) {
+      const lightbox = document.getElementById("lightbox");
+      const image = document.getElementById("lightbox-image");
+
+      image.src = src;
+      image.alt = alt;
+
+      lightbox.classList.add("active");
+      document.body.classList.add("no-scroll");
+    }
+
+    function closeLightbox(event) {
+      if (
+        event.target.id === "lightbox" ||
+        event.target.classList.contains("lightbox-close")
+      ) {
+        document.getElementById("lightbox").classList.remove("active");
+        document.body.classList.remove("no-scroll");
+      }
+    }
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        document.getElementById("lightbox").classList.remove("active");
+        document.body.classList.remove("no-scroll");
+      }
+    });
+  </script>
+
 </body>
 </html>
