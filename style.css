@@ -591,3 +591,24 @@ body.no-scroll {
     font-size: 14px;
   }
 }
+/* Bird beside Magpie Media Mockups */
+
+.portfolio-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.portfolio-brand .portfolio-magpie {
+  display: block;
+  width: 50px;
+  max-width: 50px;
+  height: auto;
+  flex: 0 0 50px;
+  object-fit: contain;
+}
+
+#portfolio-title {
+  text-transform: none;
+}
