@@ -178,6 +178,44 @@ body,
 .contact {
   background: #ffffff;
 }
+
+/* Decorative framing artwork */
+
+body{
+  position:relative;
+  overflow-x:hidden;
+}
+
+.wrap{
+  position:relative;
+  z-index:2;
+}
+
+.frame-art{
+  position:absolute;
+  pointer-events:none;
+  user-select:none;
+  z-index:1;
+}
+
+/* Broad corner-frame artwork */
+.frame-art-corners{
+  width:100%;
+  max-width:none;
+  top:0;
+  left:0;
+  opacity:0.06;
+}
+
+/* Single large magpie, pushed mostly off-canvas */
+.frame-art-main{
+  width:620px;
+  right:-400px;
+  top:900px;
+  opacity:0.14;
+  transform:rotate(6deg);
+}
+
 .flyer-image {
   cursor: zoom-in;
 }
