@@ -151,10 +151,7 @@ body{
 
 .contact{
   margin-top:28px;
-  border-top:2px solid var(--ink);
-  padding-top:22px;
   text-align:center;
-  line-height:1.6;
 }
 
 .contact a{
@@ -235,28 +232,38 @@ body{
       transparent 100%
     );
 }
-.bottom-magpies{
-  display:flex;
+.contact-with-magpies{
+  display:grid;
+  grid-template-columns:220px auto 220px;
+  align-items:center;
   justify-content:center;
-  align-items:flex-end;
-  gap:35px;
-  margin-top:30px;
-  padding-bottom:10px;
+  gap:30px;
+  margin-top:28px;
+  border-top:2px solid var(--ink);
+  padding-top:22px;
+  text-align:center;
 }
 
-.bottom-magpie{
-  width:240px;
+.contact-info{
+  min-width:300px;
+  line-height:1.6;
+}
+
+.contact-magpie{
+  width:200px;
   height:auto;
   display:block;
   pointer-events:none;
   user-select:none;
 }
 
-.bottom-magpie-left{
+.contact-magpie-left{
+  justify-self:end;
   transform:none;
 }
 
-.bottom-magpie-right{
+.contact-magpie-right{
+  justify-self:start;
   transform:scaleX(-1);
 }
 .flyer-image {
