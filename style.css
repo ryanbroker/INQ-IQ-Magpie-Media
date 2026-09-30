@@ -234,10 +234,10 @@ body{
 }
 .contact-with-magpies{
   display:grid;
-  grid-template-columns:220px auto 220px;
+  grid-template-columns:110px auto 110px;
   align-items:center;
   justify-content:center;
-  gap:30px;
+  gap:18px;
   margin-top:28px;
   border-top:2px solid var(--ink);
   padding-top:22px;
@@ -250,7 +250,7 @@ body{
 }
 
 .contact-magpie{
-  width:200px;
+  width:95px;
   height:auto;
   display:block;
   pointer-events:none;
