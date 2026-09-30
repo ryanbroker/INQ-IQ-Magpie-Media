@@ -719,3 +719,32 @@ body.no-scroll {
 .about-ryan p:last-child {
   margin-bottom: 0;
 }
+/* Bird loading screen */
+
+#site-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  display: grid;
+  place-items: center;
+  background: white;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#site-loader img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+#site-loader.is-loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #site-loader {
+    transition: none;
+  }
+}
