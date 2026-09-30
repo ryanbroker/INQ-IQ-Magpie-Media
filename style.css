@@ -235,6 +235,25 @@ body{
       transparent 100%
     );
 }
+.bottom-magpie{
+  position:absolute;
+  bottom:10px;
+  width:220px;
+  height:auto;
+  z-index:1;
+  pointer-events:none;
+  user-select:none;
+  opacity:0.32;
+}
+
+.bottom-magpie-left{
+  left:calc(50% - 250px);
+}
+
+.bottom-magpie-right{
+  right:calc(50% - 250px);
+  transform:scaleX(-1);
+}
 .flyer-image {
   cursor: zoom-in;
 }
