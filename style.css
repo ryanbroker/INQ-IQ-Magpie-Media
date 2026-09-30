@@ -619,3 +619,19 @@ body.no-scroll {
 #portfolio-title {
   text-transform: none;
 }
+/* Larger Magpie Media logo */
+
+.brand-box.magpie-explainer img {
+  width: 100%;
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin: -35px auto 22px;
+}
+
+@media (max-width: 780px) {
+  .brand-box.magpie-explainer img {
+    height: 150px;
+    margin: 0 auto 22px;
+  }
+}
