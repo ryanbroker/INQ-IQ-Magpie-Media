@@ -12,7 +12,7 @@
 
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:"Source Sans 3", Arial, sans-serif;
   background:var(--paper);
   color:var(--ink);
 }
@@ -36,9 +36,12 @@ body{
 }
 
 .hero p{
-  font-size:18px;
+  font-family:"Source Sans 3", Arial, sans-serif;
+  font-size:19px;
+  font-weight:400;
   line-height:1.5;
-  max-width:760px;
+  letter-spacing:0.01em;
+  max-width:800px;
   margin:0 auto;
 }
 
@@ -65,17 +68,22 @@ body{
 }
 
 .brand-box h2{
-  margin:0 0 12px;
-  font-family:Georgia, "Times New Roman", serif;
-  font-size:28px;
-  line-height:1.15;
+  margin:0 0 16px;
+  font-family:"Libre Baskerville", Georgia, serif;
+  font-size:27px;
+  font-weight:700;
+  line-height:1.18;
+  letter-spacing:-0.02em;
 }
 
 .brand-box p{
   margin:0 auto;
-  max-width:400px;
-  font-size:18px;
+  max-width:420px;
+  font-family:"Source Sans 3", Arial, sans-serif;
+  font-size:19px;
+  font-weight:400;
   line-height:1.55;
+  letter-spacing:0.005em;
 }
 
 .inqiq-explainer h2,
