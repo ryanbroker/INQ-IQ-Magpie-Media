@@ -1043,3 +1043,158 @@ body.no-scroll {
     width: 35px;
   }
 }
+/* Contact page layout */
+
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 48px;
+  margin-bottom: 50px;
+  align-items: start;
+}
+
+.contact-aside {
+  padding-top: 20px;
+}
+
+.contact-page-bird {
+  display: block;
+  width: 85px;
+  max-width: 85px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.contact-page-grid h2 {
+  margin: 0 0 16px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(25px, 3.5vw, 32px);
+  line-height: 1.25;
+}
+
+.contact-aside h2 {
+  font-size: 26px;
+}
+
+.contact-aside p {
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.contact-aside a {
+  color: var(--blue);
+  overflow-wrap: anywhere;
+}
+
+.contact-location {
+  color: #555;
+}
+
+/* Form */
+
+.inquiry-panel {
+  padding: 30px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.form-note {
+  margin: 0 0 24px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+  font-size: 17px;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 170px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.inquiry-panel .button {
+  background: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inquiry-panel .button:hover {
+  background: var(--ink);
+  color: white;
+}
+
+.inquiry-panel .button:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.inquiry-panel .button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#form-status:not(:empty) {
+  margin: 20px 0 0;
+}
+
+/* Mobile contact layout */
+
+@media (max-width: 780px) {
+  .contact-page-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .contact-aside {
+    padding-top: 0;
+  }
+
+  .inquiry-panel {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
