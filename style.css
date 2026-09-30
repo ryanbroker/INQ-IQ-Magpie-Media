@@ -166,3 +166,58 @@ body,
 .contact {
   background: #ffffff;
 }
+.flyer-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.flyer-image:hover {
+  transform: scale(1.015);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  z-index: 9999;
+  overflow: auto;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 94vh;
+  object-fit: contain;
+  background: #ffffff;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
