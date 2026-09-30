@@ -20,6 +20,36 @@
     height="120"
   >
 </div>
+<script>
+  (function() {
+    const loader = document.getElementById("site-loader");
+    let finished = false;
+
+    function revealSite() {
+      if (finished) return;
+      finished = true;
+
+      loader.classList.add("is-loaded");
+
+      setTimeout(function() {
+        loader.remove();
+      }, 450);
+    }
+
+    window.addEventListener("load", revealSite, { once: true });
+
+    // Reveal the page even if a resource takes too long.
+    setTimeout(revealSite, 4000);
+  })();
+</script>
+
+<noscript>
+  <style>
+    #site-loader {
+      display: none;
+    }
+  </style>
+</noscript>
   <img
     src="magpie-frame-corners.png"
     alt=""
